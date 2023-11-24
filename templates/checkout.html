@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-commerce Platform</title>
+</head>
+<body>
+<h1>Checkout</h1>
+<form action="{{ url_for('confirmation') }}" method="post">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="address">Address:</label><br>
+<input type="text" id="address" name="address"><br>
+<label for="city">City:</label><br>
+<input type="text" id="city" name="city"><br>
+<label for="state">State:</label><br>
+<input type="text" id="state" name="state"><br>
+<label for="zip">Zip:</label><br>
+<input type="text" id="zip" name="zip"><br>
+<label for="credit_card_number">Credit Card Number:</label><br>
+<input type="text" id="credit_card_number" name="credit_card_number"><br>
+<label for="expiration_date">Expiration Date:</label><br>
+<input type="text" id="expiration_date" name="expiration_date"><br>
+<input type="submit" value="Place Order">
+</form>
+</body>
+</html>
+
+
