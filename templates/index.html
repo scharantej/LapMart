@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-commerce Platform</title>
+</head>
+<body>
+<h1>Laptops</h1>
+<ul>
+{% for laptop in laptops %}
+<li><a href="{{ url_for('product', product_id=laptop.id) }}">{{ laptop.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
