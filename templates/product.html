@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-commerce Platform</title>
+</head>
+<body>
+<h1>{{ laptop.name }}</h1>
+<img src="{{ laptop.image_url }}" alt="{{ laptop.name }}">
+<p>Price: {{ laptop.price }}</p>
+<form action="{{ url_for('add_to_cart', product_id=laptop.id) }}" method="post">
+<input type="submit" value="Add to Cart">
+</form>
+</body>
+</html>
+
+
