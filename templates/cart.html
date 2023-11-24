@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-commerce Platform</title>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+<ul>
+{% for cart_item in cart_items %}
+<li>{{ cart_item.laptop.name }} x {{ cart_item.quantity }}</li>
+{% endfor %}
+</ul>
+<p>Total Price: {{ total_price }}</p>
+<form action="{{ url_for('checkout') }}" method="post">
+<input type="submit" value="Checkout">
+</form>
+</body>
+</html>
+
+
